@@ -1,0 +1,11 @@
+ function onClick(e){  
+  if (proxy==0){ 
+   setCookie("pilih",""+this.link+"idr",7);
+  }else{
+ console.log(this.link);
+	var request = new XMLHttpRequest()
+	request.open('GET',this.link,window.location.href=window.location.href , true)
+	request.send();
+ 	} 
+	    document.location.reload();
+ }
